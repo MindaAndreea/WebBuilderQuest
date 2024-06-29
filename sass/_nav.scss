@@ -1,0 +1,77 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 9rem;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1.7rem;
+
+    &-html,
+    &-css,
+    &-javascript {
+      position: relative;
+      width: calc(100% / 3);
+      text-align: center;
+      font-family: "Playwrite MX";
+      margin-top: 0.5rem;
+    }
+
+    &-button {
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      font-family: "Roboto Condensed";
+    }
+
+    .active {
+      position: relative;
+
+      & > ol {
+        display: block;
+      }
+    }
+
+    &-html-list,
+    &-css-list,
+    &-javascript-list {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      padding: 2rem;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+      z-index: 30;
+      width: calc(100% - 2rem);
+      max-height: calc(100vh - 10rem);
+      overflow-y: auto;
+
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        font-family: "Roboto Condensed";
+      }
+    }
+  }
+}

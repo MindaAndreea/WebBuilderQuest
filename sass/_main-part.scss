@@ -1,0 +1,80 @@
+.main {
+  margin-top: 12rem;
+  padding: 4rem;
+  font-size: 2rem;
+  font-family: "Roboto Condensed";
+
+  &-introduction {
+    &-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 3rem;
+
+      h1 {
+        margin-bottom: 2rem;
+        font-family: "Playwrite MX";
+      }
+
+      p:nth-of-type(1) {
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    h2,
+    h3,
+    p {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    h3 {
+      margin-left: 3rem;
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .btn {
+        cursor: pointer;
+        font-size: 1.8rem;
+        border: none;
+        font-family: "Roboto Condensed";
+        padding: 1.5rem;
+      }
+    }
+
+    .margin-bottom {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.hidden-elements {
+  margin-top: 12rem;
+  padding: 4rem;
+  padding-top: 0;
+
+  .return-to-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: center;
+
+    &-btn {
+      cursor: pointer;
+      font-size: 1.8rem;
+      border: none;
+      font-family: "Roboto Condensed";
+      padding: 1.5rem;
+    }
+  }
+}

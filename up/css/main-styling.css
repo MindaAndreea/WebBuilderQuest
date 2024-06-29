@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 9rem;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+}
+.header-nav-html, .header-nav-css, .header-nav-javascript {
+  position: relative;
+  width: 33.3333333333%;
+  text-align: center;
+  font-family: "Playwrite MX";
+  margin-top: 0.5rem;
+}
+.header-nav-button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  font-family: "Roboto Condensed";
+}
+.header-nav .active {
+  position: relative;
+}
+.header-nav .active > ol {
+  display: block;
+}
+.header-nav-html-list, .header-nav-css-list, .header-nav-javascript-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  z-index: 30;
+  width: calc(100% - 2rem);
+  max-height: calc(100vh - 10rem);
+  overflow-y: auto;
+}
+.header-nav-html-list h3, .header-nav-css-list h3, .header-nav-javascript-list h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.header-nav-html-list p, .header-nav-css-list p, .header-nav-javascript-list p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-family: "Roboto Condensed";
+}
+
+.main {
+  margin-top: 12rem;
+  padding: 4rem;
+  font-size: 2rem;
+  font-family: "Roboto Condensed";
+}
+.main-introduction-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.main-introduction-title h1 {
+  margin-bottom: 2rem;
+  font-family: "Playwrite MX";
+}
+.main-introduction-title p:nth-of-type(1) {
+  margin-bottom: 1.2rem;
+}
+.main-introduction h2,
+.main-introduction h3,
+.main-introduction p {
+  margin-bottom: 2.5rem;
+}
+.main-introduction h2 {
+  text-align: center;
+}
+.main-introduction h3 {
+  margin-left: 3rem;
+}
+.main-introduction-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-introduction-button .btn {
+  cursor: pointer;
+  font-size: 1.8rem;
+  border: none;
+  font-family: "Roboto Condensed";
+  padding: 1.5rem;
+}
+.main-introduction .margin-bottom {
+  margin-bottom: 5rem;
+}
+
+.hidden-elements {
+  margin-top: 12rem;
+  padding: 4rem;
+  padding-top: 0;
+}
+.hidden-elements .return-to-main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  text-align: center;
+}
+.hidden-elements .return-to-main-btn {
+  cursor: pointer;
+  font-size: 1.8rem;
+  border: none;
+  font-family: "Roboto Condensed";
+  padding: 1.5rem;
+}/*# sourceMappingURL=main-styling.css.map */

@@ -130,21 +130,90 @@ ul {
   margin-bottom: 5rem;
 }
 
-.hidden-elements {
+.level-one {
   margin-top: 12rem;
   padding: 4rem;
   padding-top: 0;
 }
-.hidden-elements .return-to-main {
+.level-one .return-to-main {
   display: flex;
   justify-content: flex-start;
   align-items: start;
   text-align: center;
 }
-.hidden-elements .return-to-main-btn {
+.level-one .return-to-main-btn {
   cursor: pointer;
   font-size: 1.6rem;
   border: none;
   font-family: "Roboto Condensed";
   padding: 1.5rem;
+}
+
+.level-one {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Roboto Condensed";
+}
+.level-one h2,
+.level-one h3,
+.level-one p {
+  margin-bottom: 1.7rem;
+}
+.level-one h2 {
+  font-size: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.level-one h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.level-one p {
+  font-size: 1.8rem;
+}
+.level-one-introduction, .level-one-content, .level-one-tips {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.level-one .form {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.level-one label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 3rem;
+}
+.level-one input[type=text],
+.level-one textarea {
+  width: 70%;
+  height: auto;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+.level-one button[type=submit] {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+.level-one button[type=submit]:hover {
+  background-color: #555;
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=main-styling.css.map */

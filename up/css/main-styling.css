@@ -63,7 +63,7 @@ ul {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
+  background-color: lightyellow;
   padding: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   z-index: 30;
@@ -82,10 +82,17 @@ ul {
 }
 
 .main {
-  margin-top: 12rem;
+  background-image: url(/images/overview\ city.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
   padding: 4rem;
   font-size: 2rem;
   font-family: "Roboto Condensed";
+}
+.main-introduction {
+  margin-top: 12rem;
 }
 .main-introduction-title {
   display: flex;
@@ -102,16 +109,20 @@ ul {
 .main-introduction-title p:nth-of-type(1) {
   margin-bottom: 1.2rem;
 }
-.main-introduction h2,
-.main-introduction h3,
-.main-introduction p {
-  margin-bottom: 2.5rem;
+.main-introduction-content {
+  background-image: linear-gradient(#bc78ec, transparent, #bc78ec);
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  margin-bottom: 5rem;
 }
-.main-introduction h2 {
+.main-introduction-content h2,
+.main-introduction-content h3,
+.main-introduction-content p {
+  margin-bottom: 2.5rem;
   text-align: center;
 }
-.main-introduction h3 {
-  margin-left: 3rem;
+.main-introduction-content h2 {
+  text-align: center;
 }
 .main-introduction-button {
   display: flex;
@@ -126,30 +137,36 @@ ul {
   font-family: "Roboto Condensed";
   padding: 1.5rem;
 }
-.main-introduction .margin-bottom {
-  margin-bottom: 5rem;
+
+#completionMessage {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+#level-1,
+#level-2,
+#level-3,
+#level-4,
+#level-5,
+#level-6 {
+  background-image: url(/images/html\ city.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .level-one {
   margin-top: 12rem;
   padding: 4rem;
   padding-top: 0;
-}
-.level-one .return-to-main {
-  display: flex;
-  justify-content: flex-start;
-  align-items: start;
-  text-align: center;
-}
-.level-one .return-to-main-btn {
-  cursor: pointer;
-  font-size: 1.6rem;
-  border: none;
-  font-family: "Roboto Condensed";
-  padding: 1.5rem;
-}
-
-.level-one {
   display: flex;
   justify-content: space-evenly;
   font-family: "Roboto Condensed";
@@ -179,7 +196,21 @@ ul {
   flex-direction: column;
   padding: 3rem;
 }
-.level-one .form {
+.level-one .return-to-main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  text-align: center;
+}
+.level-one .return-to-main-btn {
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: none;
+  font-family: "Roboto Condensed";
+  padding: 1.5rem;
+}
+
+.form {
   margin-bottom: 1rem;
   font-size: 2.5rem;
   display: flex;
@@ -188,13 +219,15 @@ ul {
   align-items: center;
   text-align: center;
 }
-.level-one label {
+
+label {
   font-weight: bold;
   display: block;
   margin-bottom: 3rem;
 }
-.level-one input[type=text],
-.level-one textarea {
+
+input[type=text],
+textarea {
   width: 70%;
   height: auto;
   padding: 1.5rem;
@@ -204,8 +237,10 @@ ul {
   box-sizing: border-box;
   margin-bottom: 3rem;
   font-size: 1.8rem;
+  background-color: lightyellow;
 }
-.level-one button[type=submit] {
+
+button[type=submit] {
   background-color: #333;
   color: #fff;
   padding: 1rem;
@@ -213,7 +248,46 @@ ul {
   cursor: pointer;
   font-size: 1.8rem;
 }
-.level-one button[type=submit]:hover {
+
+button[type=submit]:hover {
   background-color: #555;
   margin-bottom: 3rem;
+}
+
+.level-two {
+  margin-top: 12rem;
+  padding: 4rem;
+  padding-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Roboto Condensed";
+}
+.level-two h2,
+.level-two h3,
+.level-two h4,
+.level-two p {
+  margin-bottom: 1.7rem;
+}
+.level-two h2 {
+  font-size: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.level-two h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.level-two h4 {
+  font-size: 2rem;
+}
+.level-two p {
+  font-size: 1.8rem;
+}
+.level-two-introduction, .level-two-content, .level-two-usage {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
 }/*# sourceMappingURL=main-styling.css.map */

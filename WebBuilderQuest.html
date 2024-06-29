@@ -280,7 +280,7 @@
         </div>
       </nav>
     </header>
-    <main class="main">
+    <main id="main-page" class="main">
       <div class="main-introduction">
         <div class="main-introduction-title">
           <h1>Web Builder Quest</h1>
@@ -290,31 +290,38 @@
             the next cities!
           </p>
         </div>
-        <h2>HTML:</h2>
-        <h3>Introduction:</h3>
-        <p>
-          You will go through 6 HTML challenges, each one consists of 10XP. Upon
-          completing this part, you will unlock the new city.
-        </p>
-        <h2>CSS:</h2>
-        <h3>Introduction:</h3>
-        <p>
-          You will go through 10 CSS challenges, each one consists of 20XP. Upon
-          completing this part, you will unlock the new city.
-        </p>
-        <h2>Javascript:</h2>
-        <h3>Introduction:</h3>
-        <p class="margin-bottom">
-          You will go through 15 Javascript challenges, each one consists of
-          30XP. Upon completing this part, you will unlock the new city and the
-          final project.
-        </p>
+        <div class="main-introduction-content">
+          <h2>HTML:</h2>
+          <h3>Introduction:</h3>
+          <p>
+            You will go through 6 HTML challenges, each one consists of 10XP.
+            Upon completing this part, you will unlock the new city.
+          </p>
+          <h2>CSS:</h2>
+          <h3>Introduction:</h3>
+          <p>
+            You will go through 10 CSS challenges, each one consists of 20XP.
+            Upon completing this part, you will unlock the new city.
+          </p>
+          <h2>Javascript:</h2>
+          <h3>Introduction:</h3>
+          <p>
+            You will go through 15 Javascript challenges, each one consists of
+            30XP. Upon completing this part, you will unlock the new city and
+            the final project.
+          </p>
+        </div>
       </div>
       <div class="main-introduction-button">
         <button class="btn">Tap here for the HTML Challenges!</button>
       </div>
+      <section id="completionMessage">
+        <h2>Congratulations!</h2>
+        <p>You have completed all levels of the HTML exercises.</p>
+        <p>Now we will take you to the next city!</p>
+      </section>
     </main>
-    <section class="level-one" style="display: none">
+    <section id="level-1" class="level" style="display: none">
       <div class="return-to-main">
         <button class="return-to-main-btn">Return to the main page</button>
       </div>
@@ -365,11 +372,82 @@
           </p>
         </div>
       </div>
-      <form id="exerciseForm">
+      <form id="form-level-1">
         <div class="form">
-          <label for="exercise">Your HTML code:</label>
-          <input type="text" id="exercise" name="exercise" required />
-          <button type="submit" class="submit">Submit Exercise</button>
+          <label for="html-input-1">Your HTML code:</label>
+          <textarea
+            name="html-input-1"
+            id="html-input-1"
+            rows="10"
+            cols="60"
+          ></textarea>
+          <button type="submit" class="submit">Submit Exercise 1</button>
+        </div>
+      </form>
+      <div class="navigation-buttons">
+        <button class="next" data-next="level-2">Next Level</button>
+      </div>
+    </section>
+    <section id="level-2" class="level" style="display: none">
+      <h2>Level 2:</h2>
+      <div class="level-two">
+        <div class="level-two-introduction">
+          <h3>Lists and Links:</h3>
+          <p>
+            Lists and Links are other HTML elements. There are two types of
+            lists: ordered lists and unordered lists. The ordered lists are
+            displayed with numbers usually. The unordered lists are used when
+            the sequence of items does not matter.
+          </p>
+
+          <p>
+            The links (or hyperlinks) are used to link to other web pages,
+            files, locations within the same page, email addresses or any URL.
+          </p>
+        </div>
+        <div class="level-two-content">
+          <h3>Exercise Overview:</h3>
+          <p>
+            In this exercise you will create a basic HTML Document that includes
+            one main heading, one paragraph, an ordered list, an unordered list
+            and 2 links. The location of the links does not matter.
+          </p>
+          <p>You may choose the content.</p>
+        </div>
+        <div class="level-one-usage">
+          <h3>Usage:</h3>
+          <h4>Lists:</h4>
+          <p>
+            Ordered Lists: Useful for instructions, steps, rankings, or any
+            content where order is important.
+          </p>
+          <p>
+            Unordered Lists: Ideal for bullet points, features, to-do lists, or
+            any content where order is not crucial.
+          </p>
+          <h4>Links:</h4>
+          <p>Navigate users to other pages or websites.</p>
+          <p>Provide contact information via email links.</p>
+          <p>
+            Allow users to jump to specific sections of the same page for easier
+            navigation.
+          </p>
+        </div>
+      </div>
+      <form id="form-level-2">
+        <div class="form">
+          <label for="exercise2">Your HTML code:</label>
+          <textarea
+            name="html-input-2"
+            id="html-input-2"
+            rows="10"
+            cols="60"
+          ></textarea>
+          <button type="submit" class="submit">Submit Exercise 2</button>
+        </div>
+        <div class="navigation-buttons">
+          <button class="previous" data-prev="level-1">Previous</button>
+          <button class="next" data-next="level-3">Next</button>
         </div>
       </form>
     </section>

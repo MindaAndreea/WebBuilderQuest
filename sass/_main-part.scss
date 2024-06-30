@@ -64,6 +64,35 @@
   }
 }
 
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 1.7rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
 #completionMessage {
   display: none;
   position: fixed;
@@ -89,46 +118,20 @@
   background-size: cover;
 }
 
+#level-7,
+#level-8,
+#level-9,
+#level-10,
+#level-11,
+#level-12,
+#level-13 {
+  background-image: url(/images/css\ city.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .level-one {
-  margin-top: 12rem;
-  padding: 4rem;
-  padding-top: 0;
-  display: flex;
-  justify-content: space-evenly;
-  font-family: "Roboto Condensed";
-
-  h2,
-  h3,
-  p {
-    margin-bottom: 1.7rem;
-  }
-
-  h2 {
-    font-size: 2.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  p {
-    font-size: 1.8rem;
-  }
-
-  &-introduction,
-  &-content,
-  &-tips {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-  }
-
   .return-to-main {
     display: flex;
     justify-content: flex-start;
@@ -141,6 +144,64 @@
       border: none;
       font-family: "Roboto Condensed";
       padding: 1.5rem;
+    }
+  }
+}
+
+.level-one,
+.level-two,
+.level-three,
+.level-four,
+.level-five,
+.level-six,
+.level-seven,
+.level-eight,
+.level-nine,
+.level-ten {
+  margin-top: 12rem;
+  padding: 4rem;
+  padding-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Roboto Condensed";
+}
+
+.level-two {
+  &-introduction {
+    p:nth-of-type(2) {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.level-five {
+  .table-images {
+    display: flex;
+
+    #table-outcome {
+      align-self: center;
+      width: 50%;
+      height: 50%;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.level-six {
+  text-transform: capitalize;
+}
+
+.level-seven {
+  &-images {
+    display: flex;
+    padding: 4rem;
+
+    #css-1 {
+      align-self: center;
+      width: 50%;
+      height: 50%;
+      margin-right: 4rem;
     }
   }
 }
@@ -187,50 +248,4 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #555;
   margin-bottom: 3rem;
-}
-
-.level-two {
-  margin-top: 12rem;
-  padding: 4rem;
-  padding-top: 0;
-  display: flex;
-  justify-content: space-evenly;
-  font-family: "Roboto Condensed";
-
-  h2,
-  h3,
-  h4,
-  p {
-    margin-bottom: 1.7rem;
-  }
-
-  h2 {
-    font-size: 2.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  h4 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.8rem;
-  }
-
-  &-introduction,
-  &-content,
-  &-usage {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-  }
 }

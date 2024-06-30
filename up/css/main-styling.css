@@ -20,7 +20,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: 9rem;
+  height: 12rem;
   background-color: #333;
   display: flex;
   justify-content: space-between;
@@ -138,6 +138,35 @@ ul {
   padding: 1.5rem;
 }
 
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 1.7rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
 #completionMessage {
   display: none;
   position: fixed;
@@ -163,39 +192,19 @@ ul {
   background-size: cover;
 }
 
-.level-one {
-  margin-top: 12rem;
-  padding: 4rem;
-  padding-top: 0;
-  display: flex;
-  justify-content: space-evenly;
-  font-family: "Roboto Condensed";
+#level-7,
+#level-8,
+#level-9,
+#level-10,
+#level-11,
+#level-12,
+#level-13 {
+  background-image: url(/images/css\ city.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.level-one h2,
-.level-one h3,
-.level-one p {
-  margin-bottom: 1.7rem;
-}
-.level-one h2 {
-  font-size: 2.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.level-one h3 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-.level-one p {
-  font-size: 1.8rem;
-}
-.level-one-introduction, .level-one-content, .level-one-tips {
-  display: flex;
-  flex-direction: column;
-  padding: 3rem;
-}
+
 .level-one .return-to-main {
   display: flex;
   justify-content: flex-start;
@@ -208,6 +217,54 @@ ul {
   border: none;
   font-family: "Roboto Condensed";
   padding: 1.5rem;
+}
+
+.level-one,
+.level-two,
+.level-three,
+.level-four,
+.level-five,
+.level-six,
+.level-seven,
+.level-eight,
+.level-nine,
+.level-ten {
+  margin-top: 12rem;
+  padding: 4rem;
+  padding-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Roboto Condensed";
+}
+
+.level-two-introduction p:nth-of-type(2) {
+  margin-bottom: 5rem;
+}
+
+.level-five .table-images {
+  display: flex;
+}
+.level-five .table-images #table-outcome {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.level-six {
+  text-transform: capitalize;
+}
+
+.level-seven-images {
+  display: flex;
+  padding: 4rem;
+}
+.level-seven-images #css-1 {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  margin-right: 4rem;
 }
 
 .form {
@@ -252,42 +309,4 @@ button[type=submit] {
 button[type=submit]:hover {
   background-color: #555;
   margin-bottom: 3rem;
-}
-
-.level-two {
-  margin-top: 12rem;
-  padding: 4rem;
-  padding-top: 0;
-  display: flex;
-  justify-content: space-evenly;
-  font-family: "Roboto Condensed";
-}
-.level-two h2,
-.level-two h3,
-.level-two h4,
-.level-two p {
-  margin-bottom: 1.7rem;
-}
-.level-two h2 {
-  font-size: 2.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.level-two h3 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-.level-two h4 {
-  font-size: 2rem;
-}
-.level-two p {
-  font-size: 1.8rem;
-}
-.level-two-introduction, .level-two-content, .level-two-usage {
-  display: flex;
-  flex-direction: column;
-  padding: 3rem;
 }/*# sourceMappingURL=main-styling.css.map */
